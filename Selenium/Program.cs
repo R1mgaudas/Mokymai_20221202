@@ -31,7 +31,7 @@ namespace Selenium
             var element = driver.FindElement(By.Id("recaptcha-audio-button"));
             new Actions(driver).MoveToElement(element).MoveByOffset(50, 0).Click().Perform();
 
-
+            Thread.Sleep(3000);
             driver.SwitchTo().DefaultContent();
             elementToCLick = driver.FindElement(By.Id("recaptcha-demo-submit"));
             elementToCLick.Click();
