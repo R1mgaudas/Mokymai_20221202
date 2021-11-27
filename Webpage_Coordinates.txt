@@ -1,0 +1,7 @@
+Enter this in the console:
+
+var x, y; document.onmousemove=(e)=>{x=e.pageX;y=e.pageY;}
+
+Enter this as a Live Expression:
+
+"("+x+", "+y+")"
