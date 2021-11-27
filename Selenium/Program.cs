@@ -25,11 +25,17 @@ namespace Selenium
             IWebElement elementToCLick = driver.FindElement(By.Id("recaptcha-anchor"));
             elementToCLick.Click();
 
-            Thread.Sleep(2000);
-            driver.SwitchTo().DefaultContent();
-            driver.SwitchTo().Frame(2);
-            var element = driver.FindElement(By.Id("recaptcha-audio-button"));
-            new Actions(driver).MoveToElement(element).MoveByOffset(50, 0).Click().Perform();
+            try //jei neišokas paveikslėlis
+            {
+                Thread.Sleep(2000);
+                driver.SwitchTo().DefaultContent();
+                driver.SwitchTo().Frame(2);
+                var element = driver.FindElement(By.Id("recaptcha-audio-button"));
+                new Actions(driver).MoveToElement(element).MoveByOffset(50, 0).Click().Perform();
+            }
+            catch (Exception)
+            {
+            }
 
             Thread.Sleep(3000);
             driver.SwitchTo().DefaultContent();
