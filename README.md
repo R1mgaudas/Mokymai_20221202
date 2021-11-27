@@ -6,4 +6,5 @@ Web scraping metodai ir HTML Agility pack [Praktinė dalis](https://github.com/R
 Daugiagijiškumas ir „Producer – Consumer” šablonas [Praktinė dalis](https://github.com/R1mgaudas/Mokymai_20221202/tree/master/SkelbiuScrapperThreads)  
 CAPTCHA apėjimas [Praktinė dalis](https://github.com/R1mgaudas/Mokymai_20221202/tree/master/Selenium)  
 
-Skaidrės
+### Skaidrės:
+[Mokymai_20221202](https://github.com/R1mgaudas/Mokymai_20221202/blob/master/Mokymai_diena_2.pptx)
