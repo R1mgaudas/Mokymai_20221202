@@ -104,11 +104,11 @@ namespace SkelbiuScrapperThreads
             {
                ;
             }
-            PrintData();
 
+            Thread.Sleep(1000);
+            PrintData();
             watch.Stop();
             var elapsedMs = watch.ElapsedMilliseconds;
-            Thread.Sleep(1000);
             Console.WriteLine(elapsedMs.ToString());
             Console.ReadLine();
 

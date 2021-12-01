@@ -25,7 +25,7 @@ namespace Selenium
             IWebElement elementToCLick = driver.FindElement(By.Id("recaptcha-anchor"));
             elementToCLick.Click();
 
-            try //jei neišokas paveikslėlis
+            try //jei neišoka paveikslėlis
             {
                 Thread.Sleep(2000);
                 driver.SwitchTo().DefaultContent();
